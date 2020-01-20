@@ -1,0 +1,58 @@
+{
+  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--5-1!pages/signin.css": [
+    {
+      "modules": {
+        "byIdentifier": {},
+        "usedIds": {}
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ],
+  "modules": {
+    "byIdentifier": {
+      "css node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--5-1!pages/signin.css 0": 0
+    },
+    "usedIds": {
+      "0": 0
+    }
+  },
+  "chunks": {
+    "byName": {
+      "static/runtime/webpack.js": 0,
+      "commons": 1,
+      "static/pfz50hUIAqLkJZkn_zsat/pages/_app.js": 2,
+      "static/pfz50hUIAqLkJZkn_zsat/pages/_error.js": 3,
+      "static/pfz50hUIAqLkJZkn_zsat/pages/admin.js": 4,
+      "static/pfz50hUIAqLkJZkn_zsat/pages/admin/login.js": 5,
+      "static/pfz50hUIAqLkJZkn_zsat/pages/admin/tasks.js": 6,
+      "static/pfz50hUIAqLkJZkn_zsat/pages/index.js": 7,
+      "static/pfz50hUIAqLkJZkn_zsat/pages/login.js": 8,
+      "static/pfz50hUIAqLkJZkn_zsat/pages/signup.js": 9,
+      "static/runtime/main.js": 10,
+      "static/runtime/polyfills.js": 11
+    },
+    "bySource": {},
+    "usedIds": [
+      0,
+      1,
+      10,
+      11,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  }
+}
