@@ -5,7 +5,7 @@
       "multi private-next-pages/_document.jsx": 1,
       "multi private-next-pages/admin/index.jsx": 2,
       "multi private-next-pages/admin/login.jsx": 3,
-      "multi private-next-pages/admin/tasks.jsx": 4,
+      "multi private-next-pages/admin/tasks/index.jsx": 4,
       "multi private-next-pages/index.jsx": 5,
       "multi private-next-pages/login.jsx": 6,
       "multi private-next-pages/signup.jsx": 7,
@@ -27,15 +27,15 @@
     "byName": {
       "init-server.js": 0,
       "on-error-server.js": 1,
-      "static/pfz50hUIAqLkJZkn_zsat/pages/_app.js": 2,
-      "static/pfz50hUIAqLkJZkn_zsat/pages/_document.js": 3,
-      "static/pfz50hUIAqLkJZkn_zsat/pages/_error.js": 4,
-      "static/pfz50hUIAqLkJZkn_zsat/pages/admin.js": 5,
-      "static/pfz50hUIAqLkJZkn_zsat/pages/admin/login.js": 6,
-      "static/pfz50hUIAqLkJZkn_zsat/pages/admin/tasks.js": 7,
-      "static/pfz50hUIAqLkJZkn_zsat/pages/index.js": 8,
-      "static/pfz50hUIAqLkJZkn_zsat/pages/login.js": 9,
-      "static/pfz50hUIAqLkJZkn_zsat/pages/signup.js": 10
+      "static/ZzKEbYxcf72ph9rRL_JOr/pages/_app.js": 2,
+      "static/ZzKEbYxcf72ph9rRL_JOr/pages/_document.js": 3,
+      "static/ZzKEbYxcf72ph9rRL_JOr/pages/_error.js": 4,
+      "static/ZzKEbYxcf72ph9rRL_JOr/pages/admin.js": 5,
+      "static/ZzKEbYxcf72ph9rRL_JOr/pages/admin/login.js": 6,
+      "static/ZzKEbYxcf72ph9rRL_JOr/pages/admin/tasks.js": 7,
+      "static/ZzKEbYxcf72ph9rRL_JOr/pages/index.js": 8,
+      "static/ZzKEbYxcf72ph9rRL_JOr/pages/login.js": 9,
+      "static/ZzKEbYxcf72ph9rRL_JOr/pages/signup.js": 10
     },
     "bySource": {},
     "usedIds": [

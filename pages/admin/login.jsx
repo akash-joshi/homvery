@@ -12,7 +12,7 @@ export default function Index() {
 
   const handleSubmit = e => {
     e.preventDefault();
-    console.log('here')
+    console.log("here");
     const eusername = "prahllad@homvery.com";
     const epassword = "prahllad0001";
 
@@ -20,7 +20,7 @@ export default function Index() {
       setAdmin(true);
       setLogin(true);
       location.href = "/admin";
-    }
+    } else swal("Wrong Username or Password", "", "error");
   };
 
   return (

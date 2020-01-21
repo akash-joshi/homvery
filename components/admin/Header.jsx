@@ -1,4 +1,14 @@
+import { useEffect, useState } from "react";
+import { useLocalStorage } from "react-use";
+
 export default function Header() {
+  const [login, setLogin] = useLocalStorage("login", false);
+  const [admin, setAdmin] = useLocalStorage("admin", false);
+
+  useEffect(() => {
+    if (!admin || !login) location.href = "/admin/login";
+  }, []);
+
   return (
     <nav
       style={{ position: "absolute", top: "0", width: "100%" }}

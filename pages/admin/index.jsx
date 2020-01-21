@@ -1,4 +1,3 @@
-import { useLocalStorage } from "react-use";
 import axios from "axios";
 
 import "../signin.css";
@@ -7,15 +6,10 @@ import { useEffect, useState } from "react";
 import Header from "../../components/admin/Header";
 
 export default function Index() {
-  const [login, setLogin] = useLocalStorage("login", false);
-  const [admin, setAdmin] = useLocalStorage("admin", false);
   const [users, setUsers] = useState("");
 
   useEffect(() => {
-    if (!admin || !login) location.href = "/admin/login";
-
     axios.get("/api/users").then(r => {
-      console.log(r.data)
       setUsers(r.data);
     });
   }, []);

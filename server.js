@@ -35,6 +35,17 @@ app.prepare().then(() => {
 
   server.get("/api/users", (req, res) => res.send(db.get("users").value()));
 
+  server.get("/api/user", (req, res) => {
+    const { phone } = req.query;
+
+    res.send({
+      result: db
+        .get("users")
+        .find({ phone })
+        .value()
+    });
+  });
+
   server.put("/api/user", (req, res) => {
     const { phone, password } = req.body;
 
@@ -66,8 +77,28 @@ app.prepare().then(() => {
       .filter({ phone })
       .value();
 
-    if ( user[0].password === password ) res.sendStatus(200);
+    if (user[0].password === password) res.sendStatus(200);
     else res.sendStatus(403);
+  });
+
+  server.post("/api/user/task", (req, res) => {
+    const { phone, taskName, address } = req.body;
+
+    const user = db
+      .get("users")
+      .find({ phone })
+      .value();
+
+    if (!user.tasks) user.tasks = [];
+
+    user.tasks.push({ taskName, address, createdAt: new Date() });
+
+    db.get("users")
+      .find({ phone })
+      .assign(user)
+      .write();
+
+    res.sendStatus(200);
   });
 
   server.get("*", (req, res) => handle(req, res));
